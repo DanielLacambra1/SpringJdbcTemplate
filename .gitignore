@@ -1,0 +1,7 @@
+/target/
+
+.settings
+.project
+.classpath
+src/main/resources/mydatabase.mv.db
+src/main/resources/mydatabase.trace.db
