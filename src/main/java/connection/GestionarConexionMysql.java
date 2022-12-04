@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class GestionarConexionMysql implements Gestionadora {
-	private String jdbcUrl = "jdbc:mysql://192.168.1.50:3306/lol";
+	private static final String jdbcUrl = "jdbc:h2:file:./src/main/resources/test;INIT=RUNSCRIPT from './src/main/resources/scripts/create.sql'";
+
 	@Override
 	public Connection createConnection() {
 		Connection conn;
